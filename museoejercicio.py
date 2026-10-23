@@ -6,16 +6,16 @@ while True:
     edad = int(input("Ingresa edad: "))
     if edad > 60:
         precio *= .12
-        print("Adulto mayor, descuento de adulto mayor")
+        print("Adulto mayor, Tienes un descuento del 12%")
         break
     elif edad < 60 and edad > 17:
-        tipo = int(input("Eres profesor (1) o estudiante (2)"))
-        if tipo == 1:
+        tipo_visitante = int(input("Eres profesor (1) o estudiante (2)"))
+        if tipo_visitante == 1:
             precio *= 0.10
-            print("Profesor, descuento de profesor ")
-        elif tipo == 2:
+            print("Profesor, descuento de 10%")
+        elif tipo_visitante == 2:
             precio *= 0.10
-            print("Estudiante, descuento de estudiante")
+            print("Estudiante, descuento de 10%")
         break
     elif edad < 18 and edad > 3:
         precio_menor *= 0.10
